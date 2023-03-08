@@ -1,0 +1,19 @@
+.edit-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+::ng-deep .mat-form-field-flex {
+    border: 1px solid gray; 
+}
+
+.form-control {
+    display: inline !important;
+    width: 50%;
+}
+
+label {
+    padding-right: 10px;
+}
+
+  
