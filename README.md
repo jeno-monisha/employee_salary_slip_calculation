@@ -24,5 +24,5 @@ REST APIs details:
 
 
 <img src="/assets/getAllEmployees_api.png" alt="Get All Employees API" title="Get All Employees API">
-<img src="/assets/getAllEmployeeByEmpId_api.png" alt="Get Employee By EmpId API" title="Get Employee By EmpId API">
+<img src="/assets/getEmployeeByEmpId_api.png" alt="Get Employee By EmpId API" title="Get Employee By EmpId API">
 
