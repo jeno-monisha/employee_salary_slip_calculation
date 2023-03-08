@@ -1,5 +1,5 @@
 # employee_salary_slip_calculation
-Spring Boot + SQL Server + JPA / Hibernate + REST CRUD
+Spring Boot + SQL Server + JPA / Hibernate + REST CRUD + Angular 12
 
 For SQL Server integration to spring boot, we have to add the following starter dependency in pom.xml.
 
