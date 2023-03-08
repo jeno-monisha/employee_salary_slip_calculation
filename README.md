@@ -23,4 +23,4 @@ REST APIs details:
 9. http://localhost:8080/api/v1/employees/deleteAll DELETE
 
 
-<img src="/assets/getAllEmployees.png" alt="Employee data" title="Employee Data title">
+<img src="/assets/getAllEmployees_api.png" alt="Get All Employees API" title="Get All Employees API" height="60" width="60">
