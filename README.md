@@ -25,4 +25,9 @@ REST APIs details:
 
 <img src="/assets/getAllEmployees_api.png" alt="Get All Employees API" title="Get All Employees API">
 <img src="/assets/getEmployeeByEmpId_api.png" alt="Get Employee By EmpId API" title="Get Employee By EmpId API">
+<img src="/assets/angular_main_screen_employee_list_by_designation.png" alt="Angular Main Screen Employee List By Designation" title="Angular Main Screen Employee List By Designation">
+<img src="/assets/angular_add_employee_screen.png" alt="Angular Add Employee Screen" title="Angular Add Employee Screen">
+<img src="/assets/angular_employee_list_screen.png" alt="Angular Employee List Screen" title="Angular Employee List Screen">
+<img src="/assets/angular_edit_employee_screen.png" alt="Angular Edit Employee Screen" title="Angular Edit Employee Screen">
+
 
