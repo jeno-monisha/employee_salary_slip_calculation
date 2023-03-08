@@ -1,0 +1,128 @@
+<div>
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+
+        <div class="form-group">
+          <label for="empId">Employee Id</label>
+          <input
+            type="text"
+            class="form-control"
+            id="empId"
+            required
+            [(ngModel)]="employee.empId"
+            name="empId"
+          />
+        </div>
+
+        <div class="form-group">
+            <label for="designation">Designation</label>
+            <input
+              class="form-control"
+              id="designation"
+              required
+              [(ngModel)]="employee.designation"
+              name="designation"
+            />
+        </div>
+        
+        <div class="form-group">
+            <label for="dateOfJoining">Date Of Joining</label>
+            <mat-form-field appearance="outline">
+                <input matInput [matDatepicker]="dateOfJoiningPicker" placeholder="Choose a date" [(ngModel)]="employee.dateOfJoining" name="dateOfJoining" required>
+                <mat-datepicker-toggle matSuffix [for]="dateOfJoiningPicker">
+                    <mat-icon matDatepickerToggleIcon style="color: black;">
+                        calendar_month
+                    </mat-icon>
+                </mat-datepicker-toggle>
+                <mat-datepicker #dateOfJoiningPicker></mat-datepicker>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <label for="retirementDate">Retirement Date</label>
+            <mat-form-field appearance="outline">
+                <input matInput [matDatepicker]="retirementDatePicker" placeholder="Choose a date" [(ngModel)]="employee.retirementDate" name="retirementDate">
+                <mat-datepicker-toggle matSuffix [for]="retirementDatePicker">
+                    <mat-icon matDatepickerToggleIcon style="color: black;">
+                        calendar_month
+                    </mat-icon>
+                </mat-datepicker-toggle>
+                <mat-datepicker #retirementDatePicker></mat-datepicker>
+            </mat-form-field>
+        </div>
+
+        <div class="form-group">
+            <label for="basicPay">Basic Pay</label>
+            <input
+              type="number"
+              class="form-control"
+              id="basicPay"
+              required
+              [(ngModel)]="employee.basicPay"
+              name="basicPay"
+              min="0"
+              pattern="^[0-9]+\.[0-9][0-9]$"
+            />
+        </div>
+        
+        <div class="form-group">
+            <label for="da">DA</label>
+            <input
+              type="number"
+              class="form-control"
+              id="da"
+              [(ngModel)]="employee.da"
+              name="da"
+              min="0"
+              pattern="^[0-9]+\.[0-9][0-9]$"
+            />
+        </div>
+
+        <div class="form-group">
+            <label for="specialAllowance">Special Allowance</label>
+            <input
+              type="number"
+              class="form-control"
+              id="specialAllowance"
+              [(ngModel)]="employee.specialAllowance"
+              name="specialAllowance"
+              min="0"
+              pattern="^[0-9]+\.[0-9][0-9]$"
+            />
+        </div>
+
+        <div class="form-group">
+            <label for="professionalTax">Professional Tax</label>
+            <input
+              type="number"
+              class="form-control"
+              id="professionalTax"
+              [(ngModel)]="employee.professionalTax"
+              name="professionalTax"
+              min="0"
+              pattern="^[0-9]+\.[0-9][0-9]$"
+            />
+        </div>
+
+        <div class="form-group">
+            <label for="pf">PF</label>
+            <input
+              type="number"
+              class="form-control"
+              id="pf"
+              [(ngModel)]="employee.pf"
+              name="pf"
+              min="0"
+              pattern="^[0-9]+\.[0-9][0-9]$"
+            />
+        </div>      
+         
+        <button (click)="saveEmployee()" class="btn btn-success">Submit</button>
+      </div>
+
+      <div *ngIf="submitted">
+        <h4>Employee was submitted successfully!</h4>
+        <button class="btn btn-success" (click)="newEmployee()">Add</button>
+      </div>
+    </div>
+</div>
